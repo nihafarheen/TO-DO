@@ -1,0 +1,125 @@
+body{
+    background-color: #564a4a;
+}
+#container {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    background: #f5f7b2;
+    height: 600px;
+    color: black;
+    font-family: Verdana;
+    border: 10px solid #ff8303;
+    border-radius: 30px;
+}
+#container h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: dotted;
+    border-color: #ff8303;
+}
+#container ul{
+    margin-top: 50px;
+    padding-left: 0;
+}
+#container ul li{
+    list-style: none;
+    border:none;
+    width:80%;
+    height: 40px;
+    margin: 5px auto;
+    text-align: left;
+    font-style:italic;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+}
+#container ul li label{
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 40px;
+    font-size: 20px;
+
+}
+
+#container ul li #check{
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    -webkit-appearance: none;
+    border: 2px solid #ff8303;
+    position: relative;
+    outline: 0;
+}
+
+#container ul li #check:checked::after {
+    content: '\2714';
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    color: black;
+}
+
+#container ul li input[type='checkbox']:checked+label{
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.5);
+}
+#container .controls {
+    width: 60%;
+    margin: auto;
+    font-style: italic;
+}
+
+#container .controls #input{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 2px solid #ff8303;
+    border-radius: 10px;
+}
+#container .controls #input:focus {
+    outline: 0;
+
+}
+
+#container .controls button{
+    width: 100%;
+    background: white;
+    border: none;
+    height: 30px;
+    margin-top: 2px;
+    cursor: pointer;
+    color: white;
+    font-family: Verdana;
+    font-size: 15px;
+
+}
+#container .controls button:focus{
+    outline: 0;
+}
+
+#container .controls button:hover{
+    transform: scale(1.05);
+}
+#container .controls #add{
+    background-color: #ff8303;
+    border-radius: 30px;
+}
+#container .controls #remove {
+    background-color: #564a4a;
+    border-radius: 30px;
+
+}
+#container .mycheck {
+    opacity: 1;
+    border-radius: 10px;
+}
+.visual {
+    opacity: 1 !important;
+    border-radius: 10px;
+}
