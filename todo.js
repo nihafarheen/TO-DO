@@ -6,8 +6,8 @@ function addItem(){
     var input = document.getElementById('input')
     var item = input.value;
     var textNode = document.createTextNode(item)
-    if (item == "") {
-        msg= "Enter your Task"
+    if (item == " " || item== "") {
+        msg= "Please Enter your Task in the box"
         alert(msg)
         return false
         }
